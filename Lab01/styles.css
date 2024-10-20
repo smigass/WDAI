@@ -1,0 +1,43 @@
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.spacing {
+    grid-column-start: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin: 5px auto;
+}
+
+#title {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, tr, th {
+    border: dimgrey 2px solid;
+}
+
+th {
+    text-align: center;
+}
+
+th, td {
+    padding: 2px 5px;
+}
