@@ -1,0 +1,46 @@
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.benefits {
+    height: 32rem;
+}
+
+.mclaren {
+    color: #ff9900;
+}
+
+.anniv {
+    width: 10rem;
+    height: 10rem;
+}
+
+.product-card {
+    max-width: 25%;
+}
+
+.circle-mini {
+    width: 10rem;
+    height: 10rem;
+}
+
+.com-card {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.featured-products {
+    margin-bottom: 6rem;
+}
+
+.community{
+    margin-bottom: 8rem;
+}
