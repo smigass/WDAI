@@ -1,2 +1,0 @@
-# mini-project
-npm install
