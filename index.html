@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gierka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@700&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+    <div class="rain"></div>
+    <canvas id="gameWindow" width="1050" height="656">
+
+    </canvas>
+    <div class="menu">
+        <div class="title">
+            <h1>ZOMBIE GAME</h1>
+        </div>
+        <div id="easy" class="mode">
+            <div class="easy">EASY</div>
+            <div id="easybest" class="best-score">123</div>
+        </div>
+        <div id="medium" class="mode">
+            <div class="medium">MEDIUM</div>
+            <div id="mediumbest" class="best-score">123</div>
+        </div>
+        <div id="hard" class="mode">
+            <div class="hard">HARD</div>
+            <div id="hardbest" class="best-score">123</div>
+        </div>
+        <div id="hardcore" class="mode">
+            <div class="hardcore">HARDCORE</div>
+            <div id="hardcorebest" class="best-score">123</div>
+        </div>
+    </div>
+    <div class="death-screen">
+        <div class="title game-over">
+            <h1>GAME OVER</h1>
+        </div>
+        <div class="score info">
+            <h2 id="score">SCORE: 100</h2>
+        </div>
+        <div class="info hs">
+            <h3 id="hs"></h3>
+        </div>
+        <div class="killed-zombies info">
+            <h2 id="kills">KILLED ZOMBIES: 100</h2>
+        </div>
+        <div class="shots info">
+            <h2 id="shots">SHOTS FIRED: 100</h2>
+        </div>
+        <div class="percentage info">
+            <h2 id="onTarget">SHOTS ON TARGET: 80%</h2>
+        </div>
+        <div class="footer" onclick="location.reload()">
+            <div class="return">
+                BACK TO MENU
+            </div>
+        </div>
+
+    </div>
+    <div></div>
+</div>
+<script type="module" src="main.js"></script>
+<script type="module" src="model/Vector.js"></script>
+<script type="module" src="model/Zombie.js"></script>
+<script type="module" src="model/Sprite.js"></script>
+</body>
+</html>
