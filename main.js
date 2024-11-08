@@ -10,7 +10,6 @@ import modes from "./model/Options.js";
 let options = {}
 
 const audio = new Audio('images/sad-music.mp3');
-
 let bestScores = localStorage.getItem('records') !== null ? JSON.parse(localStorage.getItem('records')) : {
     easy: 0,
     medium: 0,
@@ -47,6 +46,7 @@ updateRecords()
 let crosshair = new Vector(canvas.width / 2, canvas.height / 2)
 canvas.addEventListener('click', (e) => {
     handleClick();
+    new Audio('images/shot.mp3').play();
 })
 
 let buttons = document.getElementsByClassName('mode')
@@ -78,6 +78,7 @@ const handleClick = (position) => {
         if (reversedZombies[i].isOnCrosshair(crosshair)) {
             onTargetFired += 1
             points += options.COINS_PER_KILL
+            new Audio('images/zombie-bite-96528.mp3').play();
             zombies = zombies.filter(zombie => zombie !== reversedZombies[i])
             return
         }
@@ -106,6 +107,7 @@ const updateGameState = () => {
     zombies.forEach(zombie => {
         if (zombie.currentPosition.x < -zombie.width) {
             lives -= 1
+            new Audio('images/fail.mp3').play();
             zombies = zombies.filter(z => z !== zombie)
         }
     })
