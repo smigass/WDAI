@@ -6,7 +6,7 @@ import modes from "./model/Options.js";
 // EASY - 120
 // MEDIUM - 90
 // HARD - 60
-localStorage.clear()
+
 let options = {}
 
 const audio = new Audio('images/sad-music.mp3');
