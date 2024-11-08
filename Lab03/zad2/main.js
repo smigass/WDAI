@@ -8,11 +8,11 @@ const specialSigns = ['!', '@', '#', '$', '%', '^', '&', '*', '?', '~']
 const generate = () => {
     const onlyLowerCase = !document.getElementById('lowercase').checked
     const allowSpecialSigns = document.getElementById('specialcase').checked
-    const minLength = document.getElementById('minimal-length').value
-    const maxLength = document.getElementById('maximal-length').value
+    const minLength = parseInt(document.getElementById('minimal-length').value)
+    const maxLength = parseInt(document.getElementById('maximal-length').value)
 
-    let length = Math.floor(Math.random() * (maxLength - minLength) + minLength)
-
+    let length = Math.floor(Math.random() * (maxLength - minLength) + 1) + minLength
+    console.log(length)
     let password = ''
     let source  = [...alphabet]
 

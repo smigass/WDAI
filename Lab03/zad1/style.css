@@ -4,12 +4,12 @@ input {
 }
 
 #start {
-    background: #006c00;
+    background: rgba(0, 172, 0, 0.85);
 }
 #stop {
-    background: #9f0000;
+    background: rgba(250, 0, 0, 0.85);
 }
 
 #restart {
-    background: #c57c00;
+    background: rgba(255, 195, 0, 0.8);
 }
