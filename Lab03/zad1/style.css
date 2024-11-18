@@ -1,0 +1,15 @@
+input {
+    width: 20rem;
+    height: 2rem;
+}
+
+#start {
+    background: rgba(0, 172, 0, 0.85);
+}
+#stop {
+    background: rgba(250, 0, 0, 0.85);
+}
+
+#restart {
+    background: rgba(255, 195, 0, 0.8);
+}

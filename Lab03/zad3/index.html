@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body onload="updateTable()">
+    <div class="top-container">
+        <label for="search">Wyszukaj produkt</label>
+        <input type="text" oninput="updateTable()" name="product" id="search">
+        <select  id="filters" name="filter" onchange="updateTable()">
+            <option value="default">Default</option>
+            <option value="ascending">A-Z</option>
+            <option value="descending">Z-a</option>
+        </select>
+    </div>
+    <div id="tableContainer" class="table-container">
+
+    </div>
+</body>
+</html>
