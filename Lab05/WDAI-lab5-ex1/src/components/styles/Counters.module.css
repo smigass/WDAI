@@ -1,0 +1,7 @@
+.counter{
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem 0;
+}

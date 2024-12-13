@@ -1,0 +1,15 @@
+.product {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 4px;
+}
+
+.cart {
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    margin: 2rem 0;
+}

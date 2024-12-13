@@ -27,6 +27,7 @@ const createUser = async (email, password) => {
 
 const findUser = async (email) => {
     const {status, data} = await getUsers()
+    console.log(data)
     if (data) {
         const user = data.find(e => e.email === email)
         return {
@@ -67,6 +68,7 @@ const getUsers = async () => {
             data: users
         }
     } catch (e) {
+        console.log(e)
         return {
             status: 500,
             data: null

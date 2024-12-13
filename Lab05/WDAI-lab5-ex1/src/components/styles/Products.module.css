@@ -1,0 +1,72 @@
+.commentsContainer {
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.comment{
+    width: 960px;
+    margin: 30px;
+}
+
+.topBar{
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    background: #ffead4;
+    justify-content: space-between;
+}
+
+.body {
+    background: rgba(255, 243, 232, 0.79);
+    padding: 10px;
+}
+
+.aka {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.botBar {
+    display: flex;
+    border-radius:  0px 0px 20px 20px;
+    background: rgba(255, 243, 232, 0.79);
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.likes > *{
+    margin: 2px 5px;
+}
+
+.post {
+    width: 100%;
+    height: 300px;
+    background: #000000;
+    color: white;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.ic{
+
+}
+.ic:hover {
+    transform: scale(1.4);
+}
+
